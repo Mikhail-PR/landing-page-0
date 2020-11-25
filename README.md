@@ -1,4 +1,4 @@
-### Landing page 1
+### [Landing page 0](https://mikhail-pr.github.io/landing-page-0/)
 
 - Vanilla js,
 - OOP,
