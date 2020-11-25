@@ -1,0 +1,19 @@
+include ./_includes
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title DigitalCrafters
+    body
+        include ./blocks/header/_header
+        main.main
+            div.main__wrapper-section
+                div.main__container-section
+                    include ./blocks/section-about/_section-about
+                include ./blocks/section-testimonials/_section-testimonials
+            include ./blocks/section-services/_section-services
+            include ./blocks/section-portfolio/_section-portfolio
+            include ./blocks/section-contact/_section-contact
+        include ./blocks/footer/_footer
+        include ./blocks/nav-up-btn/_nav-up-btn

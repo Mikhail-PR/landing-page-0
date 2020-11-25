@@ -1,0 +1,168 @@
+.header {
+  width: 100%;
+
+  background-color: $header-bg-color;
+  background-image: linear-gradient(
+    to top,
+    #0f2976 0%,
+    #0d3783 22%,
+    #0ab2e3 100%
+  );
+
+  color: $light-color;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.header__row {
+  height: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  text-transform: uppercase;
+
+  padding: 48px 80px 0;
+
+  & > :not(:nth-last-child(n + 2)) {
+    margin-right: 35px;
+  }
+}
+
+.request-link {
+  min-width: 205px;
+  min-height: 54px;
+
+  border-radius: 27px;
+  border: 2px solid $light-color;
+
+  text-align: center;
+  line-height: 54px;
+  color: $light-color;
+
+  &:hover {
+    border: 2px solid $link-hover-color;
+  }
+}
+
+.header__container {
+  height: 90vh;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.header__slogan {
+  opacity: 0.5;
+
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  margin-bottom: 33px;
+}
+
+.header__title {
+  font-size: 76px;
+  line-height: 80px;
+
+  margin-bottom: 23px;
+}
+
+.header__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+
+  margin-bottom: 58px;
+}
+
+@media (max-width: $screen-xl), (max-height: 720px) {
+  .header__container {
+    max-width: 670px;
+  }
+
+  .header__title-wrapper {
+    padding: 60px 20px;
+  }
+  .header__slogan {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 28px;
+  }
+
+  .header__title {
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 21px;
+  }
+
+  .header__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .header__row {
+    position: relative;
+
+    & > * {
+      z-index: 1;
+    }
+  }
+
+  .header__row {
+    padding: 25px 30px;
+
+    & > :last-child {
+      margin-right: 0;
+    }
+
+    & > :not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .request-link {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) {
+  .header__slogan {
+    display: none;
+  }
+
+  .header__text {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-xxl) {
+  .header__row {
+    & > :nth-child(-n + 2) {
+      margin-right: 30px;
+    }
+  }
+}

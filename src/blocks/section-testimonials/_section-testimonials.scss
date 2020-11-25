@@ -1,0 +1,9 @@
+.section-testimonials {
+  padding-bottom: 140px;
+}
+
+@media (max-width: $screen-xl) {
+  .section-testimonials {
+    padding-bottom: 60px;
+  }
+}

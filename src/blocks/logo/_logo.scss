@@ -1,0 +1,87 @@
+.logo {
+  color: $light-color;
+
+  display: flex;
+  align-items: center;
+
+  transition: fill 150ms ease, color 100ms ease;
+
+  &:hover {
+    color: $link-hover-color;
+
+    svg {
+      fill: $link-hover-color;
+    }
+  }
+}
+
+.logo--header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.logo--footer {
+  &:hover {
+    color: $icons-color;
+
+    svg {
+      fill: $icons-color;
+    }
+  }
+}
+
+.logo__img {
+  margin-right: 10px;
+
+  svg {
+    fill: $light-color;
+  }
+}
+
+.logo__title {
+  white-space: nowrap;
+  font-family: "Oswald";
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+@media (max-width: $screen-xl) {
+  .logo--header {
+    position: static;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .logo__img {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 7px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .logo__title {
+    font-size: 16px;
+  }
+
+  @media (max-width: 686px) {
+    .logo {
+      transform: translateY(3px);
+    }
+  }
+}
+
+@media (max-width: $screen-xxl) {
+  .logo--header {
+    position: static;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}

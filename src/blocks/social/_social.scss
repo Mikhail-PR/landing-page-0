@@ -1,0 +1,51 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  :not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & > * {
+    display: flex;
+    align-items: center;
+
+    filter: brightness(50%) sepia(1) hue-rotate(194deg) saturate(100%)
+      brightness(158%);
+
+    &:hover {
+      filter: brightness(50%) sepia(1) hue-rotate(162deg) saturate(353.2%)
+        brightness(91.2%);
+    }
+  }
+}
+
+.social--center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+@media (max-width: $screen-xl) {
+  .social {
+    & > * > img:not(.social__twitter-icon) {
+      width: 17px;
+      height: 17px;
+    }
+
+    .social__twitter-icon {
+      width: 18px;
+      height: 16px;
+    }
+
+    :not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+
+  .social--center {
+    position: static;
+    transform: translate(0, 0);
+  }
+}

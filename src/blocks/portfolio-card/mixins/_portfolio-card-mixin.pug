@@ -1,0 +1,11 @@
+mixin portfolio-card(img, icon, title, text)
+    div.portfolio-card
+        img.portfolio-card__img(src=img.default draggable="false")
+        div.portfolio-card__description
+            div.portfolio-card__header-wrapper
+                div.portfolio-card__icon
+                    img.portfolio-card__icon-img(src=icon.default)
+                h3.portfolio-card__title=title
+            p.portfolio-card__text=text
+            div.portfolio-card__tags
+                block

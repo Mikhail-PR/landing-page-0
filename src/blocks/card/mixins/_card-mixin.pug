@@ -1,0 +1,7 @@
+mixin card(title, text, iconImgSrc, mod)
+    div.card(class=mod)
+        if (iconImgSrc)
+            div.card__icon
+                img.card__icon-img(src=iconImgSrc.default)
+        h3.card__title=title
+        p.card__text=text

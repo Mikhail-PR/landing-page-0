@@ -1,0 +1,14 @@
+.section-portfolio {
+  background-color: $portfolio-bg-color;
+  background: url("./blocks/section-portfolio/img/section-portfolio-bg.png") top
+    left / cover no-repeat;
+
+  padding-top: 185px;
+  padding-bottom: 140px;
+}
+
+@media (max-width: $screen-xl) {
+  .section-portfolio {
+    padding: 60px 0 60px;
+  }
+}

@@ -1,0 +1,19 @@
+.section-contact {
+  background: url("./blocks/section-contact/img/section-contact-bg.png") left
+      no-repeat,
+    #0d3b86;
+
+  padding-top: 111px;
+  padding-bottom: 140px;
+}
+
+.section-contact__container {
+  max-width: 645px;
+  margin: 0 auto;
+}
+
+@media (max-width: $screen-xl) {
+  .section-contact {
+    padding: 60px 30px 65px;
+  }
+}

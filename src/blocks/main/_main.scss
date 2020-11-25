@@ -1,0 +1,15 @@
+.main__wrapper-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $light-color;
+
+  background: url("./blocks/main/img/quote-green.png") 365px 1245px no-repeat,
+    url("./blocks/main/img/base.png") top 449px left / cover no-repeat;
+}
+
+.main__container-section {
+  max-width: 710px;
+  margin: 0 auto;
+}

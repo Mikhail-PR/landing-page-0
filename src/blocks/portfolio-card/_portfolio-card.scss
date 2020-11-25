@@ -1,0 +1,148 @@
+.portfolio-card {
+  width: 1170px;
+  height: 467px;
+  box-shadow: 0 25px 35px rgba(34, 34, 34, 0.11);
+  border-radius: 5px;
+  background-color: $light-color;
+
+  display: flex;
+
+  color: $text-color;
+  font-family: $main-font;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.portfolio-card--disabled {
+  opacity: 0.25;
+}
+
+.portfolio-card__img {
+  width: 50%;
+  background-color: $light-color;
+  object-fit: cover;
+}
+
+.portfolio-card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-left: 1px solid rgba(32, 51, 77, 0.15);
+  width: 50%;
+  padding: 64px 75px 65px 44px;
+}
+
+.portfolio-card__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  margin-bottom: 28px;
+}
+
+.portfolio-card__icon {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: $icons-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 34px;
+}
+
+.portfolio-card__text {
+  color: $text-color;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: inherit;
+
+  margin-bottom: 10px;
+}
+
+.portfolio-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    color: #29384d;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+    border: 1px solid rgba(96, 111, 133, 0.25);
+    padding: 5px 14px 5px 14px;
+
+    margin-bottom: 5px;
+  }
+
+  & :not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .portfolio-card {
+    width: 315px;
+    height: 620px;
+
+    flex-direction: column;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .portfolio-card__img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .portfolio-card__description {
+    width: 100%;
+    height: 60%;
+
+    flex-direction: column;
+
+    border-top: 1px solid rgba(32, 51, 77, 0.15);
+    padding: 30px 25px 45px;
+  }
+
+  .portfolio-card__header-wrapper {
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+
+  .portfolio-card__icon {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    margin-bottom: 23px;
+
+    .portfolio-card__icon-img {
+      width: 15px;
+      height: 19px;
+    }
+  }
+}

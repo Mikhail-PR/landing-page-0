@@ -1,0 +1,8 @@
+mixin header-section(slogan, title, subtitle, mod)
+    div.header-section(class=mod)
+        if (slogan)
+            p.header-section__slogan=slogan
+        h2.header-section__title=title
+        hr.header-section__hr
+        if (subtitle)
+            p.header-section__subtitle=subtitle

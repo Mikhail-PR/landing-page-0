@@ -1,0 +1,10 @@
+mixin slider(id, mod)
+    div.slider(id=id, class=mod)
+        div.slider__window
+            block
+        div.slider__nav
+            button.slider__btn.btn-prev
+                include ../img/_left
+            div.slider__nav-points
+            button.slider__btn.btn-next
+                include ../img/_right

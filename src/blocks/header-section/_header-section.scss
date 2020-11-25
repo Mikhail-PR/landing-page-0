@@ -1,0 +1,124 @@
+.header-section {
+  font-family: $main-font;
+  text-align: center;
+  margin-bottom: 45px;
+
+  word-wrap: break-word;
+}
+
+.header-section--services {
+  max-width: 550px;
+  margin: 0 auto;
+
+  margin-bottom: 90px;
+
+  .header-section__title {
+    color: $light-color;
+  }
+
+  .header-section__hr {
+    background-color: $light-color;
+    opacity: 1;
+
+    margin-bottom: 45px;
+  }
+
+  .header-section__subtitle {
+    color: $light-color;
+  }
+}
+
+.header-section--portfolio {
+  max-width: 550px;
+  margin: 0 auto;
+
+  margin-bottom: 0;
+
+  .header-section__hr {
+    margin-bottom: 45px;
+  }
+
+  .header-section__subtitle {
+    color: $text-color;
+  }
+}
+
+.header-section--contact {
+  .header-section__title {
+    color: $light-color;
+  }
+
+  .header-section__hr {
+    background-color: $light-color;
+    opacity: 1;
+  }
+}
+
+.header-section__slogan {
+  color: $icons-color;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 25px;
+}
+
+.header-section__title {
+  color: $title-color;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 52px;
+
+  margin-bottom: 45px;
+}
+
+.header-section__hr {
+  width: 70px;
+  height: 4px;
+  background-color: $text-color;
+  opacity: 0.15;
+}
+
+.header-section__subtitle {
+  max-width: 550px;
+
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+@media (max-width: $screen-xl) {
+  .header-section {
+    margin-bottom: 30px;
+  }
+
+  .header-section--services {
+    margin-bottom: 60px;
+
+    .header-section__hr {
+      margin-bottom: 30px;
+    }
+  }
+
+  .header-section__title {
+    font-size: 24px;
+    line-height: 33px;
+
+    margin-bottom: 23px;
+  }
+
+  .header-section--portfolio {
+    margin-bottom: 0;
+    padding: 0 30px;
+    
+    .header-section__hr {
+      margin-bottom: 30px;
+    }
+  }
+
+  .header-section__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
