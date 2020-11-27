@@ -6,5 +6,4 @@
 - [Custom form validation](./src/blocks/form/README.md),
 - BEM,
 - Flexbox,
-- Grid,
 - Adaptive design.
